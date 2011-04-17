@@ -1,0 +1,164 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+//#include "afxres.h"
+#include <windows.h>
+#define IDC_STATIC -1
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ニュートラル resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MAIN           ICON                    "res\\icon_main.ico"
+IDI_ICON_ENABLE         ICON                    "res\\icon_enable.ico"
+IDI_ICON_DISABLE        ICON                    "res\\icon_disable.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "AutoRaise",                   ID_AUTORAISE
+        MENUITEM "Save to Registry",            ID_SAVETOREGISTRY
+        MENUITEM "Show Settings",               ID_SHOWSETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Version",                     ID_VERSION
+        MENUITEM "Quit",                        ID_QUIT
+    END
+END
+
+#endif    // ニュートラル resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,10
+ PRODUCTVERSION 1,0,0,10
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "TaskTray X-Mouse Controller"
+            VALUE "FileDescription", "TTXMouse"
+            VALUE "FileVersion", "1, 0, 0, 10"
+            VALUE "InternalName", "TTXMouse"
+            VALUE "LegalCopyright", "Copyright (c) 2011 Yohei Endo"
+            VALUE "OriginalFilename", "TTXMouse.exe"
+            VALUE "ProductName", "TTXMouse"
+            VALUE "ProductVersion", "1, 0, 0, 10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NAME                "TTXMouse"
+    IDS_VERSION             "1.0.0"
+    IDS_VERSIONMESSAGE      "TTXMouse Version 1.0.0\nCopyright (c) 2011 Yohei Endo"
+    IDS_SETTINGSFORMAT      "Current Settings\n\tFocus : %s\n\tRaise : %s\n\nRegistry Settings\n\tFocus : %s\n\tRaise : %s"
+    IDS_SETTINGENABLED      "Enabled"
+    IDS_SETTINGDISABLED     "Disabled"
+    IDS_ERRORMESSAGE1       "Error : Failed to save to registry"
+    IDS_ERRORMESSAGE2       "Error : Failed to get settings"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

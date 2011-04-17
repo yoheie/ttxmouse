@@ -1,0 +1,2 @@
+2011-04-17 Yohei Endo <yoheie@gmail.com>
+	* バージョン 1.0.0 リリース
