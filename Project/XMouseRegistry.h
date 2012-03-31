@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011 Yohei Endo <yoheie@gmail.com>
+ * Copyright (c) 2011, 2012 Yohei Endo <yoheie@gmail.com>
  * 
  * This software is provided 'as-is', without any express or implied warranty.
  * In no event will the authors be held liable for any damages arising from the
@@ -27,7 +27,7 @@
 #include <tchar.h>
 #include <windows.h>
 
-BOOL XMouseRegistry_Save(BOOL benabled, BOOL braiseenabled);
-BOOL XMouseRegistry_Load(BOOL *benabled, BOOL *braiseenabled);
+BOOL XMouseRegistry_Save(BOOL benabled, BOOL braiseenabled, DWORD timeout);
+BOOL XMouseRegistry_Load(BOOL *benabled, BOOL *braiseenabled, DWORD *timeout);
 
 #endif /* XMOUSEREGISTRY_H__ */

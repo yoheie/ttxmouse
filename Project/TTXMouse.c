@@ -39,13 +39,13 @@ static HMENU g_hPopupMenu;
 static TCHAR g_strName[16];
 static TCHAR g_strVersion[16];
 static TCHAR g_strVersionMessage[64];
-static TCHAR g_strSettingsFormat[96];
+static TCHAR g_strSettingsFormat[128];
 static TCHAR g_strSettingEnabled[16];
 static TCHAR g_strSettingDisabled[16];
 static TCHAR g_strErrorMessage1[48];
 static TCHAR g_strErrorMessage2[48];
 
-static TCHAR g_strSettingsMessage[128];
+static TCHAR g_strSettingsMessage[160];
 
 static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
@@ -136,14 +136,17 @@ static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM l
 	static UINT wm_taskbarcreated;
 	static BOOL benabled = FALSE;
 	static BOOL braiseenabled = FALSE;
+	static DWORD dwdelay = 0;
 	static BOOL bregenabled = FALSE;
 	static BOOL bregraiseenabled = FALSE;
+	static DWORD dwregdelay = 0;
 
 	switch (uMsg) {
 	case WM_CREATE:
 		wm_taskbarcreated = RegisterWindowMessage(_T("TaskbarCreated"));
 		SystemParametersInfo(SPI_GETACTIVEWINDOWTRACKING, 0, &benabled, 0);
 		SystemParametersInfo(SPI_GETACTIVEWNDTRKZORDER, 0, &braiseenabled, 0);
+		SystemParametersInfo(SPI_GETACTIVEWNDTRKTIMEOUT, 0, &dwdelay, 0);
 		NotifyIcon_Create(&notifyIcon, hwnd, benabled ? g_hIconEnable : g_hIconDisable, WM_NOTIFYICON, g_strName);
 		break;
 	case WM_DESTROY:
@@ -185,14 +188,16 @@ static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM l
 		case ID_SAVETOREGISTRY:
 			SystemParametersInfo(SPI_GETACTIVEWINDOWTRACKING, 0, &benabled, 0);
 			SystemParametersInfo(SPI_GETACTIVEWNDTRKZORDER, 0, &braiseenabled, 0);
-			if (!XMouseRegistry_Save(benabled, braiseenabled)) {
+			SystemParametersInfo(SPI_GETACTIVEWNDTRKTIMEOUT, 0, &dwdelay, 0);
+			if (!XMouseRegistry_Save(benabled, braiseenabled, dwdelay)) {
 				MessageBox(hwnd, g_strErrorMessage1, g_strName, MB_OK);
 			}
 			break;
 		case ID_SHOWSETTINGS:
 			SystemParametersInfo(SPI_GETACTIVEWINDOWTRACKING, 0, &benabled, 0);
 			SystemParametersInfo(SPI_GETACTIVEWNDTRKZORDER, 0, &braiseenabled, 0);
-			if (!XMouseRegistry_Load(&bregenabled, &bregraiseenabled)) {
+			SystemParametersInfo(SPI_GETACTIVEWNDTRKTIMEOUT, 0, &dwdelay, 0);
+			if (!XMouseRegistry_Load(&bregenabled, &bregraiseenabled, &dwregdelay)) {
 				MessageBox(hwnd, g_strErrorMessage2, g_strName, MB_OK);
 			}
 			else {
@@ -202,8 +207,10 @@ static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM l
 					g_strSettingsFormat,
 					benabled ? g_strSettingEnabled : g_strSettingDisabled,
 					braiseenabled ? g_strSettingEnabled : g_strSettingDisabled,
+					dwdelay,
 					bregenabled ? g_strSettingEnabled : g_strSettingDisabled,
-					bregraiseenabled ? g_strSettingEnabled : g_strSettingDisabled
+					bregraiseenabled ? g_strSettingEnabled : g_strSettingDisabled,
+					dwregdelay
 					);
 				MessageBox(hwnd, g_strSettingsMessage, g_strName, MB_OK);
 			}

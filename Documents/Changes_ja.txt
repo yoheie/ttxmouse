@@ -1,2 +1,6 @@
+2012-03-31 Yohei Endo <yoheie@gmail.com>
+	* バージョン 1.0.1
+	* Active window tracking delay の取得を追加
+
 2011-04-17 Yohei Endo <yoheie@gmail.com>
 	* バージョン 1.0.0 リリース

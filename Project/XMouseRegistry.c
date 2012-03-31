@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011 Yohei Endo <yoheie@gmail.com>
+ * Copyright (c) 2011, 2012 Yohei Endo <yoheie@gmail.com>
  * 
  * This software is provided 'as-is', without any express or implied warranty.
  * In no event will the authors be held liable for any damages arising from the
@@ -31,7 +31,7 @@
 #define XMOUSE_REGISTRY_BIT_ENABLE 0x01
 #define XMOUSE_REGISTRY_BIT_RAISE  0x40
 
-BOOL XMouseRegistry_Save(BOOL benabled, BOOL braiseenabled)
+BOOL XMouseRegistry_Save(BOOL benabled, BOOL braiseenabled, DWORD timeout)
 {
 	HKEY hkey;
 	LONG status;
@@ -76,16 +76,21 @@ BOOL XMouseRegistry_Save(BOOL benabled, BOOL braiseenabled)
 		return FALSE;
 	}
 
+	status = RegSetValueEx(hkey, _T("ActiveWndTrkTimeout"), 0, REG_DWORD, (CONST BYTE *)&timeout, sizeof(DWORD));
+	if (status != ERROR_SUCCESS) {
+		RegCloseKey(hkey);
+		return FALSE;
+	}
+
 	RegCloseKey(hkey);
 
 	return TRUE;
 }
 
-BOOL XMouseRegistry_Load(BOOL *benabled, BOOL *braiseenabled)
+BOOL XMouseRegistry_Load(BOOL *benabled, BOOL *braiseenabled, DWORD *timeout)
 {
 	HKEY hkey;
 	LONG status;
-	DWORD type;
 	BYTE value[XMOUSE_REGISTRY_SIZE];
 	DWORD size = 0;
 
@@ -94,13 +99,13 @@ BOOL XMouseRegistry_Load(BOOL *benabled, BOOL *braiseenabled)
 		return FALSE;
 	}
 
-	status = RegQueryValueEx(hkey, _T("UserPreferencesMask"), NULL, &type, NULL, &size);
+	status = RegQueryValueEx(hkey, _T("UserPreferencesMask"), NULL, NULL, NULL, &size);
 	if ((status != ERROR_SUCCESS) || ((size < 1) || (sizeof(value) < size))) {
 		RegCloseKey(hkey);
 		return FALSE;
 	}
 
-	status = RegQueryValueEx(hkey, _T("UserPreferencesMask"), NULL, &type, value, &size);
+	status = RegQueryValueEx(hkey, _T("UserPreferencesMask"), NULL, NULL, value, &size);
 	if (status != ERROR_SUCCESS) {
 		RegCloseKey(hkey);
 		return FALSE;
@@ -112,6 +117,16 @@ BOOL XMouseRegistry_Load(BOOL *benabled, BOOL *braiseenabled)
 
 	if (braiseenabled) {
 		*braiseenabled = (value[XMOUSE_REGISTRY_OFFSET] & XMOUSE_REGISTRY_BIT_RAISE) ? TRUE : FALSE;
+	}
+
+	if (timeout) {
+		size = sizeof(DWORD);
+
+		status = RegQueryValueEx(hkey, _T("ActiveWndTrkTimeout"), NULL, NULL, (LPBYTE)timeout, &size);
+		if (status != ERROR_SUCCESS) {
+			RegCloseKey(hkey);
+			return FALSE;
+		}
 	}
 
 	RegCloseKey(hkey);

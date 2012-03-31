@@ -3,7 +3,7 @@
 
 [Setup]
 AppName=TTXMouse
-AppVerName=TTXMouse 1.0.0
+AppVerName=TTXMouse 1.0.1
 AppPublisher=Yohei Endo
 AppPublisherURL=http://yoheie.sakura.ne.jp/ttxmouse/
 AppSupportURL=http://yoheie.sakura.ne.jp/ttxmouse/
@@ -12,7 +12,7 @@ DefaultDirName={pf}\TTXMouse
 DefaultGroupName=TTXMouse
 AllowNoIcons=yes
 OutputDir=Setup
-OutputBaseFilename=TTXMouse-1.0.0-Setup
+OutputBaseFilename=TTXMouse-1.0.1-Setup
 Compression=lzma
 SolidCompression=yes
 

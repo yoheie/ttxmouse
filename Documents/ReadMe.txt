@@ -1,6 +1,6 @@
                                 TTXMouse ReadMe
 
-                                                           2011-04-17 Yohei Endo
+                                                           2012-03-31 Yohei Endo
 
 
 1. About TTXMouse
@@ -61,11 +61,16 @@
     Seve X-Mouse Enable/Disable and AutoRaise Enable/Disable settings to
     Registry.
 
-  3. Version
+  3. Show Settings
+
+    Display current and Registry settings for X-Mouse Enable/Disable, AutoRaise
+    Enable/Disable and Focusing delay.
+
+  4. Version
 
     Display Version information.
 
-  4. Quit
+  5. Quit
 
     Quit TTXMouse.
 
@@ -99,4 +104,4 @@
   for details.
 
 
-                                Copyright (c) 2011 Yohei Endo <yoheie@gmail.com>
+                          Copyright (c) 2011, 2012 Yohei Endo <yoheie@gmail.com>
