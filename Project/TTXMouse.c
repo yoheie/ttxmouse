@@ -30,8 +30,8 @@
 
 #define WM_NOTIFYICON (WM_APP + 0)
 
-static HANDLE g_hIconEnable;
-static HANDLE g_hIconDisable;
+static HICON g_hIconEnable;
+static HICON g_hIconDisable;
 
 static HMENU g_hMenu;
 static HMENU g_hPopupMenu;
@@ -65,8 +65,8 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
 		return 0;
 	}
 
-	g_hIconEnable = LoadImage(hInstance, MAKEINTRESOURCE(IDI_ICON_ENABLE), IMAGE_ICON, 0, 0, LR_DEFAULTCOLOR);
-	g_hIconDisable = LoadImage(hInstance, MAKEINTRESOURCE(IDI_ICON_DISABLE), IMAGE_ICON, 0, 0, LR_DEFAULTCOLOR);
+	g_hIconEnable = (HICON)LoadImage(hInstance, MAKEINTRESOURCE(IDI_ICON_ENABLE), IMAGE_ICON, 0, 0, LR_DEFAULTCOLOR);
+	g_hIconDisable = (HICON)LoadImage(hInstance, MAKEINTRESOURCE(IDI_ICON_DISABLE), IMAGE_ICON, 0, 0, LR_DEFAULTCOLOR);
 	g_hMenu = LoadMenu(hInstance, MAKEINTRESOURCE(IDR_MENU_MAIN));
 	g_hPopupMenu = GetSubMenu(g_hMenu, 0);
 	LoadString(hInstance, IDS_NAME, g_strName, sizeof(g_strName) / sizeof(TCHAR));
