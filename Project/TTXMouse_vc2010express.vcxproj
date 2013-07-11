@@ -22,6 +22,7 @@
     <ProjectGuid>{918CC7B2-21F3-46D2-B79F-35FD1299BA35}</ProjectGuid>
     <RootNamespace>TTXMouse</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>TTXMouse</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="Configuration">

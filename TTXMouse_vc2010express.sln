@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C++ Express 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTXMouse", "Project\TTXMouse.vcxproj", "{918CC7B2-21F3-46D2-B79F-35FD1299BA35}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTXMouse", "Project\TTXMouse_vc2010express.vcxproj", "{918CC7B2-21F3-46D2-B79F-35FD1299BA35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
