@@ -1,6 +1,6 @@
 # TTXMouse Makefile for MinGW/MSYS
 #
-# Copyright (c) 2011 Yohei Endo <yoheie@gmail.com>
+# Copyright (c) 2011-2013 Yohei Endo <yoheie@gmail.com>
 #
 # This software is provided 'as-is', without any express or implied warranty.
 # In no event will the authors be held liable for any damages arising from the
