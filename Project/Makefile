@@ -45,7 +45,7 @@ all:				$(PROGRAM)
 $(PROGRAM):			$(OBJECTS)
 	$(LD) $(LDFLAGS) $^ -o $@
 
-TTXMouse.o:			TTXMouse.c NotifyIcon.h resource.h
+TTXMouse.o:			TTXMouse.c XMouseRegistry.h NotifyIcon.h resource.h
 	$(CC) $(CFLAGS) -c $<
 
 NotifyIcon.o:		NotifyIcon.c NotifyIcon.h
