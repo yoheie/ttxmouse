@@ -30,8 +30,12 @@ Name: desktopicon; Description: "{cm:CreateDesktopIcon}"; GroupDescription:"{cm:
 
 [Files]
 Source: "Project\Release Unicode\TTXMouse.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Project\TTXMouse.vcxproj"; DestDir: "{app}\Project"; Flags: ignoreversion
-Source: "Project\TTXMouse.vcxproj.filters"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vc2010express.vcxproj"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vc2010express.vcxproj.filters"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vs2012express.vcxproj"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vs2012express.vcxproj.filters"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vs2013express.vcxproj"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vs2013express.vcxproj.filters"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\TTXMouse.c"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\XMouseRegistry.c"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\XMouseRegistry.h"; DestDir: "{app}\Project"; Flags: ignoreversion
