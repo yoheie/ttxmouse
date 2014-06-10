@@ -1,2 +1,13 @@
 * -text
+
 *.ico binary
+
+*.sln encoding=utf-8
+*.vcxproj encoding=utf-8
+*.vcxproj.filters encoding=utf-8
+
+TTXMouse.iss encoding=cp932
+
+Documents/*_ja.txt encoding=cp932
+
+*.rc encoding=cp932
