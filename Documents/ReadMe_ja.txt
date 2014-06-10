@@ -1,6 +1,6 @@
                                 TTXMouse ReadMe
 
-                                                            2011-03-31 遠藤 陽平
+                                                            2014-06-10 遠藤 陽平
 
 
 1. TTXMouse とは
@@ -101,8 +101,8 @@
 
 5. ライセンス
 
-  TTXMouse のライセンスは zlib/libpng ライセンスとします。詳細は Lisence.txt を
+  TTXMouse のライセンスは zlib/libpng ライセンスとします。詳細は License.txt を
   参照してください。
 
 
-                           Copyright (c) 2011, 2012 遠藤 陽平 <yoheie@gmail.com>
+                            Copyright (c) 2011-2014 遠藤 陽平 <yoheie@gmail.com>

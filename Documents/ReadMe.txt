@@ -1,6 +1,6 @@
                                 TTXMouse ReadMe
 
-                                                           2012-03-31 Yohei Endo
+                                                           2014-06-10 Yohei Endo
 
 
 1. About TTXMouse
@@ -100,8 +100,8 @@
 
 5. License
 
-  TTXMouse is distributed under zlib/libpng license. Prease refer to Lisence.txt
+  TTXMouse is distributed under zlib/libpng license. Prease refer to License.txt
   for details.
 
 
-                          Copyright (c) 2011, 2012 Yohei Endo <yoheie@gmail.com>
+                           Copyright (c) 2011-2014 Yohei Endo <yoheie@gmail.com>
