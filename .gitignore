@@ -1,0 +1,17 @@
+# Created by MinGW make
+Project/*.o
+Project/TTXMouse.exe
+
+# Created by Visual Studio
+*.vcxproj.user
+*.opensdf
+*.sdf
+*.suo
+/ipch/
+/Project/Debug/
+/Project/Debug Unicode/
+/Project/Release/
+/Project/Release Unicode/
+
+# Created by Inno Setup
+/Setup/
