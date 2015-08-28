@@ -15,7 +15,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// ニュートラル resources
+// Neutral resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
 #ifdef _WIN32
@@ -52,12 +52,12 @@ BEGIN
     END
 END
 
-#endif    // ニュートラル resources
+#endif    // Neutral resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// 日本語 resources
+// Japanese resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
 #ifdef _WIN32
@@ -147,7 +147,7 @@ BEGIN
     IDS_ERRORMESSAGE2       "Error : Failed to get settings"
 END
 
-#endif    // 日本語 resources
+#endif    // Japanese resources
 /////////////////////////////////////////////////////////////////////////////
 
 
