@@ -36,6 +36,8 @@ Source: "Project\TTXMouse_vs2012express.vcxproj"; DestDir: "{app}\Project"; Flag
 Source: "Project\TTXMouse_vs2012express.vcxproj.filters"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\TTXMouse_vs2013express.vcxproj"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\TTXMouse_vs2013express.vcxproj.filters"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vs2015express.vcxproj"; DestDir: "{app}\Project"; Flags: ignoreversion
+Source: "Project\TTXMouse_vs2015express.vcxproj.filters"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\TTXMouse.c"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\XMouseRegistry.c"; DestDir: "{app}\Project"; Flags: ignoreversion
 Source: "Project\XMouseRegistry.h"; DestDir: "{app}\Project"; Flags: ignoreversion
