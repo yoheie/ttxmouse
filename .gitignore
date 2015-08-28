@@ -7,6 +7,7 @@ Project/TTXMouse.exe
 *.opensdf
 *.sdf
 *.suo
+*.aps
 /ipch/
 /Project/Debug/
 /Project/Debug Unicode/
