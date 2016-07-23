@@ -15,6 +15,8 @@ OutputDir=Setup
 OutputBaseFilename=TTXMouse-1.0.1-Setup
 Compression=lzma
 SolidCompression=yes
+DisableWelcomePage=no
+DisableDirPage=no
 
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
