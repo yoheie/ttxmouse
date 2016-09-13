@@ -1,6 +1,6 @@
-2012-03-31 Yohei Endo <yoheie@gmail.com>
-	* ƒo[ƒWƒ‡ƒ“ 1.0.1
-	* Active window tracking delay ‚Ìæ“¾‚ğ’Ç‰Á
+ï»¿2012-03-31 Yohei Endo <yoheie@gmail.com>
+	* ãƒãƒ¼ã‚¸ãƒ§ãƒ³ 1.0.1
+	* Active window tracking delay ã®å–å¾—ã‚’è¿½åŠ 
 
 2011-04-17 Yohei Endo <yoheie@gmail.com>
-	* ƒo[ƒWƒ‡ƒ“ 1.0.0 ƒŠƒŠ[ƒX
+	* ãƒãƒ¼ã‚¸ãƒ§ãƒ³ 1.0.0 ãƒªãƒªãƒ¼ã‚¹

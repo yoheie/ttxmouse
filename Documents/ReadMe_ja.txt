@@ -1,108 +1,108 @@
-                                TTXMouse ReadMe
+﻿                                TTXMouse ReadMe
 
-                                                            2014-06-10 ���� �z��
-
-
-1. TTXMouse �Ƃ�
-
-  TTXMouse �̓^�X�N�g���C�ɏ풓���A X-Mouse �̐ݒ��e�Ղɂ��郆�[�e�B���e�B��
-  ���B
-
-  X-Mouse �Ƃ́A�|�C���^�ɒǏ]���ăA�N�e�B�u�E�B���h�E��؂�ւ���ݒ�̂��Ƃ�
-  ���B���̐ݒ�ɂ��A Windows �� X Window System ���̃t�H�[�J�X�ړ��Ŏg�p���邱
-  �Ƃ��o���܂��B
-
-  X-Mouse �̐ݒ�� Tweak UI �ł��\�ł����A TTXMouse ��p���邱�Ƃɂ�莟�̗��_
-  ������܂��B
-
-  1. �ȈՂȑ���
-
-    �^�X�N�g���C�A�C�R������A����̃N���b�N�Őݒ肪�\�ł��B
-
-  2. �ݒ�̕ύX�ƃ��W�X�g���ւ̕ۑ����ʂɉ\
-
-    Tweak UI ��p����ƁA�ݒ�̕ύX�Ɠ����Ƀ��W�X�g���̕ҏW���s���܂��B
-    TTXMouse �́A�����I�ɑ��삵�Ȃ���΃��W�X�g���̕ύX����؍s���܂���B
+                                                            2014-06-10 遠藤 陽平
 
 
-2. �����
+1. TTXMouse とは
 
-  TTXMouse �̓�����͈ȉ��̂Ƃ���ł��B
+  TTXMouse はタスクトレイに常駐し、 X-Mouse の設定を容易にするユーティリティで
+  す。
+
+  X-Mouse とは、ポインタに追従してアクティブウィンドウを切り替える設定のことで
+  す。この設定により、 Windows を X Window System 風のフォーカス移動で使用するこ
+  とが出来ます。
+
+  X-Mouse の設定は Tweak UI でも可能ですが、 TTXMouse を用いることにより次の利点
+  があります。
+
+  1. 簡易な操作
+
+    タスクトレイアイコンから、数回のクリックで設定が可能です。
+
+  2. 設定の変更とレジストリへの保存が個別に可能
+
+    Tweak UI を用いると、設定の変更と同時にレジストリの編集が行われます。
+    TTXMouse は、明示的に操作しなければレジストリの変更を一切行いません。
+
+
+2. 動作環境
+
+  TTXMouse の動作環境は以下のとおりです。
 
     Windows XP
     Windows Vista
     Windows 7
 
-  �ȉ��̊��œ���m�F���s���Ă���܂��B
+  以下の環境で動作確認を行っております。
 
     Windows XP Home Edition SP3
     Windows 7 Ultimate SP1
 
 
-3. ������@
+3. 操作方法
 
-  TTXMouse ���N������ƁA�^�X�N�g���C�� "2�̏d�Ȃ����E�B���h�E" �̊G�̃A�C�R��
-  ���\������܂��B X-Mouse �������̏ꍇ�́A���̏�ɐԂ� "�~" ���`���ꂽ�A�C�R��
-  �ɂȂ�܂��B
+  TTXMouse を起動すると、タスクトレイに "2つの重なったウィンドウ" の絵のアイコン
+  が表示されます。 X-Mouse が無効の場合は、その上に赤い "×" が描かれたアイコン
+  になります。
 
-  X-Mouse �̗L��/�����̐ݒ�́A�^�X�N�g���C�A�C�R�������N���b�N���邱�ƂŐ؂��
-  �����܂��B�ݒ��ύX����ƁA�A�C�R���̕\�����؂�ւ��܂��B
+  X-Mouse の有効/無効の設定は、タスクトレイアイコンを左クリックすることで切り替
+  えられます。設定を変更すると、アイコンの表示が切り替わります。
 
-  �^�X�N�g���C�A�C�R�����E�N���b�N����ƁA���j���[���\������܂��B���j���[�̍���
-  �͈ȉ��̒ʂ�ł��B
+  タスクトレイアイコンを右クリックすると、メニューが表示されます。メニューの項目
+  は以下の通りです。
 
   1. AutoRaise
 
-    �t�H�[�J�X�ړ����̍őO�ʂւ̈ړ��̗L��/������ݒ肵�܂��B
-    �`�F�b�N�}�[�N���\������Ă���ꍇ�͗L���A����Ă��Ȃ��ꍇ�͖����ł��B
+    フォーカス移動時の最前面への移動の有効/無効を設定します。
+    チェックマークが表示されている場合は有効、されていない場合は無効です。
 
   2. Save to Registry
 
-    X-Mouse �̗L��/������ AutoRaise �̗L��/���������W�X�g���ɕۑ����܂��B
+    X-Mouse の有効/無効と AutoRaise の有効/無効をレジストリに保存します。
 
   3. Show Settings
 
-    X-Mouse �̗L��/�����A AutoRaise �̗L��/�����A�t�H�[�J�X�ړ��̒x���̊e�ݒ��
-    ���āA���݂̐ݒ�y�у��W�X�g���ɕۑ����ꂽ�ݒ��\�����܂��B
+    X-Mouse の有効/無効、 AutoRaise の有効/無効、フォーカス移動の遅延の各設定に
+    ついて、現在の設定及びレジストリに保存された設定を表示します。
 
   4. Version
 
-    �o�[�W��������\�����܂��B
+    バージョン情報を表示します。
 
   5. Quit
 
-    TTXMouse ���I�����܂��B
+    TTXMouse を終了します。
 
 
-4. �C���X�g�[��/�A���C���X�g�[��
+4. インストール/アンインストール
 
-  TTXMouse �̃C���X�g�[��/�A���C���X�g�[���ɂ̓C���X�g�[�����񋟂���Ă��܂��B
+  TTXMouse のインストール/アンインストールにはインストーラが提供されています。
 
-  �C���X�g�[����p���Ȃ��ꍇ�A�C���X�g�[���� TTXMouse.exe ��C�ӂ̏ꏊ�ɒu���A��
-  �D�݂ŃX�^�[�g�A�b�v��f�X�N�g�b�v�ȂǂɃV���[�g�J�b�g���쐬���Ă��������B�A��
-  �C���X�g�[���� TTXMouse.exe �y�э쐬�����V���[�g�J�b�g���폜���Ă��������B
+  インストーラを用いない場合、インストールは TTXMouse.exe を任意の場所に置き、お
+  好みでスタートアップやデスクトップなどにショートカットを作成してください。アン
+  インストールは TTXMouse.exe 及び作成したショートカットを削除してください。
 
-  TTXMouse �� (�C���X�g�[�����쐬���郌�W�X�g���L�[������) �V�K�Ƀ��W�X�g���L�[
-  ���쐬���邱�Ƃ͂���܂��񂪁A�W���ő��݂��郌�W�X�g���L�[��ύX���܂��B�ύX��
-  �郌�W�X�g���L�[�͈ȉ��̒ʂ�ł��B
+  TTXMouse は (インストーラが作成するレジストリキーを除き) 新規にレジストリキー
+  を作成することはありませんが、標準で存在するレジストリキーを変更します。変更す
+  るレジストリキーは以下の通りです。
 
-    �L�[ : HKCU\Control Panel\Desktop
-    ���O : UserPreferencesMask
+    キー : HKCU\Control Panel\Desktop
+    名前 : UserPreferencesMask
 
-  �A���C���X�g�[����ɏ�L�̃L�[�𕜌�����K�v������ꍇ�́A�ȉ��̉��ꂩ�̕��@��
-  �\�ł��B
+  アンインストール後に上記のキーを復元する必要がある場合は、以下の何れかの方法で
+  可能です。
   
-  1. TTXMouse ���A���C���X�g�[������O�ɁA X-Mouse �y�� AutoRaise �̐ݒ���C���X
-     �g�[���O�̏�Ԃɂ��ă��W�X�g���ɕۑ�����B
+  1. TTXMouse をアンインストールする前に、 X-Mouse 及び AutoRaise の設定をインス
+     トール前の状態にしてレジストリに保存する。
 
-  2. TTXMouse �ɂ�背�W�X�g���ւ̕ۑ����s���O�ɏ�L�̃L�[��ۑ����Ă����A�A���C
-     ���X�g�[����ɕ�������B
-
-
-5. ���C�Z���X
-
-  TTXMouse �̃��C�Z���X�� zlib/libpng ���C�Z���X�Ƃ��܂��B�ڍׂ� License.txt ��
-  �Q�Ƃ��Ă��������B
+  2. TTXMouse によりレジストリへの保存を行う前に上記のキーを保存しておき、アンイ
+     ンストール後に復元する。
 
 
-                            Copyright (c) 2011-2014 ���� �z�� <yoheie@gmail.com>
+5. ライセンス
+
+  TTXMouse のライセンスは zlib/libpng ライセンスとします。詳細は License.txt を
+  参照してください。
+
+
+                            Copyright (c) 2011-2014 遠藤 陽平 <yoheie@gmail.com>

@@ -8,4 +8,4 @@
 
 TTXMouse.iss encoding=cp932
 
-Documents/*_ja.txt encoding=cp932
+Documents/*_ja.txt encoding=utf-8
