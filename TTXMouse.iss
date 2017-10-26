@@ -5,9 +5,9 @@
 AppName=TTXMouse
 AppVerName=TTXMouse 1.0.1
 AppPublisher=Yohei Endo
-AppPublisherURL=http://yoheie.sakura.ne.jp/ttxmouse/
-AppSupportURL=http://yoheie.sakura.ne.jp/ttxmouse/
-AppUpdatesURL=http://yoheie.sakura.ne.jp/ttxmouse/
+AppPublisherURL=https://yoheie.sakura.ne.jp/ttxmouse/
+AppSupportURL=https://yoheie.sakura.ne.jp/ttxmouse/
+AppUpdatesURL=https://yoheie.sakura.ne.jp/ttxmouse/
 DefaultDirName={pf}\TTXMouse
 DefaultGroupName=TTXMouse
 AllowNoIcons=yes
