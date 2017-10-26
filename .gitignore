@@ -8,6 +8,8 @@ Project/TTXMouse.exe
 *.sdf
 *.suo
 *.aps
+*.VC.db
+/.vs/
 /ipch/
 /Project/Debug/
 /Project/Debug Unicode/
