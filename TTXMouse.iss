@@ -63,7 +63,7 @@ Source: "Documents\Changes_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
 Name: "{group}\TTXMouse"; Filename: "{app}\TTXMouse.exe"
 Name: "{group}\{cm:UninstallProgram,TTXMouse}"; Filename: "{uninstallexe}"
 Name: "{commonstartup}\TTXMouse"; Filename: "{app}\TTXMouse.exe"; Tasks:startupicon
-Name: "{commondesktop}\TTXMouse"; Filename: "{app}:TTXMouse.exe"; Tasks:desktopicon
+Name: "{commondesktop}\TTXMouse"; Filename: "{app}\TTXMouse.exe"; Tasks:desktopicon
 
 [Run]
 Filename: "{app}\TTXMouse.exe"; Description: "{cm:LaunchProgram,TTXMouse}"; Flags: nowait postinstall skipifsilent
