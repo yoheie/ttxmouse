@@ -1,4 +1,9 @@
-﻿2012-03-31 Yohei Endo <yoheie@gmail.com>
+﻿2020-09-27 Yohei Endo <yoheie@gmail.com>
+	* バージョン 1.0.2
+	* デスクトップショートカットが正しく生成されない
+	  インストーラの問題を修正。
+
+2012-03-31 Yohei Endo <yoheie@gmail.com>
 	* バージョン 1.0.1
 	* Active window tracking delay の取得を追加
 

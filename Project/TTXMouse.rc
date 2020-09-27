@@ -115,12 +115,12 @@ BEGIN
         BEGIN
             VALUE "Comments", "TaskTray X-Mouse Controller"
             VALUE "FileDescription", "TTXMouse"
-            VALUE "FileVersion", "1, 0, 1, 11"
+            VALUE "FileVersion", "1, 0, 2, 12"
             VALUE "InternalName", "TTXMouse"
-            VALUE "LegalCopyright", "Copyright (c) 2011, 2012 Yohei Endo"
+            VALUE "LegalCopyright", "Copyright (c) 2011-2020 Yohei Endo"
             VALUE "OriginalFilename", "TTXMouse.exe"
             VALUE "ProductName", "TTXMouse"
-            VALUE "ProductVersion", "1, 0, 1, 11"
+            VALUE "ProductVersion", "1, 0, 2, 12"
         END
     END
     BLOCK "VarFileInfo"
@@ -138,8 +138,8 @@ END
 STRINGTABLE 
 BEGIN
     IDS_NAME                "TTXMouse"
-    IDS_VERSION             "1.0.1"
-    IDS_VERSIONMESSAGE      "TTXMouse Version 1.0.1\nCopyright (c) 2011, 2012 Yohei Endo"
+    IDS_VERSION             "1.0.2"
+    IDS_VERSIONMESSAGE      "TTXMouse Version 1.0.2\nCopyright (c) 2011-2020 Yohei Endo"
     IDS_SETTINGSFORMAT      "Current Settings\n\tFocus : %s\n\tRaise : %s\n\tDelay : %lu ms\n\nRegistry Settings\n\tFocus : %s\n\tRaise : %s\n\tDelay : %lu ms"
     IDS_SETTINGENABLED      "Enabled"
     IDS_SETTINGDISABLED     "Disabled"

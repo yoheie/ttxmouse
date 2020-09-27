@@ -1,3 +1,8 @@
+2020-09-27 Yohei Endo <yoheie@gmail.com>
+	* Version 1.0.2
+	* Fixed an issue with the installer that the desktop
+	  shortcut is not created correctly.
+
 2012-03-31 Yohei Endo <yoheie@gmail.com>
 	* Version 1.0.1
 	* Getting active window tracking delay added.

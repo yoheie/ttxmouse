@@ -1,6 +1,6 @@
                                 TTXMouse ReadMe
 
-                                                           2014-06-10 Yohei Endo
+                                                           2020-09-27 Yohei Endo
 
 
 1. About TTXMouse
@@ -104,4 +104,4 @@
   for details.
 
 
-                           Copyright (c) 2011-2014 Yohei Endo <yoheie@gmail.com>
+                           Copyright (c) 2011-2020 Yohei Endo <yoheie@gmail.com>

@@ -1,6 +1,6 @@
 ﻿                                TTXMouse ReadMe
 
-                                                            2014-06-10 遠藤 陽平
+                                                            2020-09-27 遠藤 陽平
 
 
 1. TTXMouse とは
@@ -105,4 +105,4 @@
   参照してください。
 
 
-                            Copyright (c) 2011-2014 遠藤 陽平 <yoheie@gmail.com>
+                            Copyright (c) 2011-2020 遠藤 陽平 <yoheie@gmail.com>
